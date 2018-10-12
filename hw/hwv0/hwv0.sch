@@ -72,8 +72,6 @@ Text Label 2500 1900 0    50   ~ 0
 RX_L
 Wire Wire Line
 	2300 2000 2500 2000
-Wire Wire Line
-	2500 2100 2300 2100
 Text Label 2500 2000 0    50   ~ 0
 STRAINGAUGE+
 Text Label 2500 2100 0    50   ~ 0
@@ -938,4 +936,18 @@ Text Notes 4000 5850 0    100  ~ 0
 PRESSURE SENSOR\n
 Text Notes 1100 5850 0    100  ~ 0
 CONNECTORS\n
+Text Label 4700 2200 0    50   ~ 0
+MISO
+Text Label 4700 2300 0    50   ~ 0
+MOSI
+Wire Wire Line
+	4500 2200 4700 2200
+Connection ~ 4500 2200
+Wire Wire Line
+	4700 2300 4400 2300
+Connection ~ 4400 2300
+Wire Wire Line
+	2300 2100 4700 2100
+Text Label 4700 2100 0    50   ~ 0
+SCK
 $EndSCHEMATC
