@@ -1,0 +1,49 @@
+ESD Data Acquisition System :
+Problem Statement:
+	Ddesign a Data Acquisition System to Display and transfer data to a PC over a serial link.
+	The data to be gathered is 
+		Weight of objects, ranging from 0-20kg,with resoluation of 100g
+	and,
+		Pressure in range ___-___ ___ , with resoluation of _____ ___
+	
+Solution :
+	
+	Selecting a microcontroller:
+		Requirements :
+			ADC, at least 8bit
+			USART or timer or H/w interrupts for serial communication
+			At least 10 GPIOs,
+				6 for HD77480 LCd (16X02)
+				2 for Serial communication
+				1 for weight measurement
+				1 for Pressure sensor
+				
+		THERE ARE DIFFERENT APPROACHES HERE, TO SELECT A MICROCONTROLLER
+		THE MAJOR FORCE DRIVING ANY NORMAL DESIGN IS THE COST.
+		IF YOU CAN MAKE THE DESIGN COST LESS BY RS10, YOU SAVE MMILLIONS IN A LONG RUN
+		
+		THUS , THE CHALLANGE HERE IS TO FIND A MICROCONTROLLER WHICH WILL NOT CONPROMISE OUR ANALOG SPEC, 
+		BUT,
+		
+		HAS ALL THE ANALOG SIGNAL CONDITIONING BUILT IN,
+		IS GOING TO BE OUR BEST CHOICE
+		
+		
+	
+	As a differential amplifier is required to get readings from the Strain Gauge for Weight measurement,
+		and "ATTINY84A" mcu has a differential ADC built in
+		
+		which costs RS66 in 1-off quantities, eliminating need of seperate
+		differential ADC , which normally cost in the range fo RS80 to RS180 alone,
+			
+			a microcontroller with a built in differential ADC is , while
+			costing less than only the amplifier, helps in cutting the cost of the design
+			
+			The ADC also HAS a gain selection in differential mode
+			
+	Next BIG advantage by going with ALL-IN-ONE solution is saving of the layout space,
+		thus, 
+		PCB size gets reduced,
+		PCB cost gets reduced.
+		
+		ATTINY84A is avaliable in packge QFN20 with size 3mmX3mm results in smaller and smaller PCB
