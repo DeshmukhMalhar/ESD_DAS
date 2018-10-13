@@ -72,32 +72,6 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_01x04_Female
-#
-DEF Connector:Conn_01x04_Female J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector:Conn_01x04_Female" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
-A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
-A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
-A 0 100 20 901 -901 1 1 6 N 0 120 0 80
-P 2 1 1 6 -50 -200 -20 -200 N
-P 2 1 1 6 -50 -100 -20 -100 N
-P 2 1 1 6 -50 0 -20 0 N
-P 2 1 1 6 -50 100 -20 100 N
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-X Pin_4 4 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector:DB9_Female_MountingHoles
 #
 DEF Connector:DB9_Female_MountingHoles J 0 40 Y N 1 F N
@@ -155,6 +129,31 @@ $ENDFPLIST
 DRAW
 C 0 130 30 0 1 0 N
 X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Shielded:Conn_01x04_Shielded
+#
+DEF Connector_Generic_Shielded:Conn_01x04_Shielded J 0 40 Y N 1 F N
+F0 "J" 10 190 50 H V C CNN
+F1 "Connector_Generic_Shielded:Conn_01x04_Shielded" 40 -290 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??-1SH*
+$ENDFPLIST
+DRAW
+S -50 150 50 -250 1 1 6 N
+S -40 -195 10 -205 1 1 6 N
+S -40 -95 10 -105 1 1 6 N
+S -40 5 10 -5 1 1 6 N
+S -40 105 10 95 1 1 6 N
+S -40 140 40 -240 1 1 10 f
+X Pin_1 1 -200 100 160 R 50 50 1 1 P
+X Pin_2 2 -200 0 160 R 50 50 1 1 P
+X Pin_3 3 -200 -100 160 R 50 50 1 1 P
+X Pin_4 4 -200 -200 160 R 50 50 1 1 P
+X Shield SH 0 -400 150 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
