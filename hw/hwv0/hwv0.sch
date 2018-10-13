@@ -950,4 +950,6 @@ Wire Wire Line
 	2300 2100 4700 2100
 Text Label 4700 2100 0    50   ~ 0
 SCK
+Text Notes 7350 7500 0    79   ~ 0
+Data Acquisition System\n
 $EndSCHEMATC
